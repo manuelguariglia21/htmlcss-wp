@@ -140,27 +140,45 @@ aside, .main-text {
 
 aside {
   min-height: 370px;
-  width: 25%;
+  width: 20%;
 }
 
-#photo1 .overlay {
+#photo1 .overlay, #photo2 .overlay {
   min-height: 250px;
   border-radius: 15px;
 }
 
-#photo1{
-  min-height: 250px;
+#photo1, #photo2{
+  min-height: 150px;
   background-image: url('../img/img-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#photo1{
+  background-image: url('../img/img-1.jpg');
+}
+
+#photo2{
+  background-image: url('../img/img-2.jpg');
+}
+
+
+.p.title{
+  margin-bottom: 20px;
+}
+
+.p.text{
+  color: #878787;
 }
 
 .main-text {
 
   min-height: 370px;
-  width: 46%;
+  width: 56%;
   margin-left: 2%;
   margin-right: 2%;
 
