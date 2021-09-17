@@ -1,3 +1,6 @@
+
+/* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,28 +13,41 @@ body {
 }
 
 
-.header-top{
+/* HEADER */
+
+.header-top {
   height: 124px;
   background-color: #e579e6;
 }
 
-.clearfix::after{ 
+.clearfix::after { 
 	content: ""; 
 	display: table; 
 	clear:both 
 }
 
+.logo{
+  width: 220px;
+  border-right: 1px solid lightgray;
+}
+
+.logo img {
+  width: 200px;
+  padding-left: 20px;
+}
+
 /* Jumbotron */
-.jumbotron{
+.jumbotron {
   height: 350px;
   background-color: #e1d67a;
   margin-top: 23px;
 }
 /* /Jumbotron */
 
+
 /* MAIN */
 
-main{
+main {
 
   background-color: blue;
   padding-bottom: 23px;
@@ -40,24 +56,24 @@ main{
 
 /* Content */
 
-.top-area{
+.top-area {
   height: 60px;
   background-color: #abcfe7;
   margin-top: 23px;
 }
 
-aside, .main-text{
-  float: left;
+aside, .main-text {
+  float: left; 
   background-color: #abcfe7;
   margin-top: 18px;
 }
 
-aside{
+aside {
   min-height: 370px;
   width: 25%;
 }
 
-.main-text{
+.main-text {
 
   min-height: 370px;
   width: 46%;
@@ -66,17 +82,12 @@ aside{
 
 }
 
-/* /Content */
-
-/* /MAIN */
 
 /* FOOTER */
 
-footer{
+footer {
   height: 42px;
   background-color: #8601ff;
   margin-top: 23px;
   margin-bottom: 23px;
 }
-
-/* /FOOTER */
