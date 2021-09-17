@@ -35,7 +35,7 @@ body {
 .logo.line {
   height: 70px;
   width: 0px;
-  border-right: 1px solid #878787;
+  border-right: 1px solid lightgray;
   float: left;
   margin-left: 20px;
 }
@@ -110,16 +110,12 @@ nav li a:hover, nav li a:active{
 /* MAIN */
 
 main {
-
-  background-color: blue;
   padding-bottom: 23px;
-
 }
 
 /* Content */
 
 .top-area {
-  background-color: white;
   margin-top: 23px;
 }
 
@@ -133,8 +129,7 @@ h1{
 }
 
 aside, .main-text {
-  float: left; 
-  background-color: #abcfe7;
+  float: left;
   margin-top: 18px;
 }
 
@@ -143,12 +138,12 @@ aside {
   width: 20%;
 }
 
-#photo1 .overlay, #photo2 .overlay {
+#photo1 .overlay, #photo2 .overlay, #banner .overlay{
   min-height: 250px;
   border-radius: 15px;
 }
 
-#photo1, #photo2{
+#photo1, #photo2, #banner{
   min-height: 150px;
   background-image: url('../img/img-1.jpg');
   background-size: cover;
@@ -175,6 +170,10 @@ aside {
   color: #878787;
 }
 
+#banner{
+  background-image: url('../img/banner-2.jpg');
+}
+
 .main-text {
 
   min-height: 370px;
@@ -189,7 +188,16 @@ aside {
 
 footer {
   height: 42px;
-  background-color: #8601ff;
   margin-top: 23px;
   margin-bottom: 23px;
+}
+
+.credits{
+  text-align: center;
+}
+
+.credits::after{
+  content: '\2665';
+  color: red;
+  font-size: 30px;
 }
